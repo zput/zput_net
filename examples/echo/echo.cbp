@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="EchoServer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/EchoServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/EchoServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add directory="../../zput" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="support" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-lpthread" />
+		</Linker>
+		<Unit filename="../../zput/base/LogInterface.h" />
+		<Unit filename="../../zput/base/Thread.cpp" />
+		<Unit filename="../../zput/base/Thread.h" />
+		<Unit filename="../../zput/net/Buffer.cpp" />
+		<Unit filename="../../zput/net/Buffer.h" />
+		<Unit filename="../../zput/net/Epoll.cpp" />
+		<Unit filename="../../zput/net/Epoll.h" />
+		<Unit filename="../../zput/net/IOEvent.cpp" />
+		<Unit filename="../../zput/net/IOEvent.h" />
+		<Unit filename="../../zput/net/IOEventCtrl.cpp" />
+		<Unit filename="../../zput/net/IOEventCtrl.h" />
+		<Unit filename="../../zput/net/IOEventLoop.cpp" />
+		<Unit filename="../../zput/net/IOEventLoop.h" />
+		<Unit filename="../../zput/net/IOEventLoopThread.cpp" />
+		<Unit filename="../../zput/net/IOEventLoopThread.h" />
+		<Unit filename="../../zput/net/IOEventLoopThreadPool.cpp" />
+		<Unit filename="../../zput/net/IOEventLoopThreadPool.h" />
+		<Unit filename="../../zput/net/Socket.cpp" />
+		<Unit filename="../../zput/net/Socket.h" />
+		<Unit filename="../../zput/net/SocketAddr.cpp" />
+		<Unit filename="../../zput/net/SocketAddr.h" />
+		<Unit filename="../../zput/net/SocketOperation.cpp" />
+		<Unit filename="../../zput/net/SocketOperation.h" />
+		<Unit filename="../../zput/net/TcpAccept.cpp" />
+		<Unit filename="../../zput/net/TcpAccept.h" />
+		<Unit filename="../../zput/net/TcpConnect.cpp" />
+		<Unit filename="../../zput/net/TcpConnect.h" />
+		<Unit filename="../../zput/net/TcpServer.cpp" />
+		<Unit filename="../../zput/net/TcpServer.h" />
+		<Unit filename="../../zput/net/Timer.cpp" />
+		<Unit filename="../../zput/net/Timer.h" />
+		<Unit filename="../../zput/net/TimerQueue.cpp" />
+		<Unit filename="../../zput/net/TimerQueue.h" />
+		<Unit filename="../../zput/net/http/HttpContext.cpp" />
+		<Unit filename="../../zput/net/http/HttpContext.h" />
+		<Unit filename="../../zput/net/http/HttpRequest.h" />
+		<Unit filename="../../zput/net/http/HttpResponse.cpp" />
+		<Unit filename="../../zput/net/http/HttpResponse.h" />
+		<Unit filename="../../zput/net/http/HttpServer.cpp" />
+		<Unit filename="../../zput/net/http/HttpServer.h" />
+		<Unit filename="EchoServer.cpp" />
+		<Unit filename="EchoServer.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
