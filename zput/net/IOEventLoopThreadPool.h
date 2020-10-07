@@ -16,6 +16,7 @@ class IOEventLoopThreadPool
 public:
     IOEventLoopThreadPool(IOEventLoop* loop);
     void AddTheNumberOfLoopThread();
+    void AddTheNumberOfLoopThread(int num );
     void init(int num );
     bool isStarted();
     void setThreadNum(uint16_t num);
